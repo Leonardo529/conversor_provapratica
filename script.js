@@ -1,17 +1,21 @@
-function converterUnidades(unidadeEntrada, cotacaoDolar, cotacaoEuro, cotacaoLibra) {
-    if (cotacaoDolar > unidadeEntrada) {
-          return unidadeEntrada * cotacaoDolar;
+function converterUnidades(unidadeEntrada, cotacaoDolar, cotacaoEuro, cotacaoLibra, resultado)
 
-    } else if (cotacaoEuro) {
-          return unidadeEntrada * cotacaoEuro; 
+    Real_Dolar(){
+        this.resultado = (this.valor) / (this.cotacaoDolar);
+        this.resultado = parseFloat(this.resultado.toFixed(2));
+        }
 
-    } else if (cotacaoLibra) {
-          return unidadeEntrada * cotacaoLibra;
+    Real_Euro(){
+            this.resultado = (this.valor) / (this.cotacaoEuro);
+            this.resultado = parseFloat(this.resultado.toFixed(2));
+            }
 
-    } else {  
-      return unidadeEntrada;   
-    }
-}
+    Real_Libra(){
+                this.resultado = (this.valor) / (this.cotacaoLibra);
+                this.resultado = parseFloat(this.resultado.toFixed(2));
+            }
+    
+         
   const unidadeEntradaInput = document.getElementById("unidade-entrada");
   const cotacaoDolarInput = document.getElementById("cotacao-dolar");
   const cotacaoEuroInput = document.getElementById("cotacao-euro");
