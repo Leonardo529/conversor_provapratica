@@ -28,24 +28,19 @@
                             <div class="form-group">
                                 <label for="cotacao-dolar">Dólar(USD)</label>
                                 <input placeholder="Insira a cotação aqui:" type="number" class="form-control"
-                                    id="real-dolar">
+                                    id="real_dolar">
                                 <br>
                                 <label for="cotacao-euro">Euro(EUR)</label>
                                 <input placeholder="Insira a cotação aqui:" type="number" class="form-control"
-                                    id="real-euro">
+                                    id="real_euro">
                                 <br>
                                 <label for="cotacao-libra">Libra Esterlina(GBP)</label>
                                 <input placeholder="Insira a cotação aqui:" type="number" class="form-control"
-                                    id="real-libra">
+                                    id="real_libra">
                             </div>
 
-                            <button type="button" class="btn btn-primary btn-block" id="converter">Converter</button>
+                            <button onclick="convertCurrency()">Converter</button>
                         </form>
-                        <br><br>
-                        <label class="titulo3">Resultado da conversão</label><br>
-                        <div class="result">
-                            <input value= "resultado" id="resultado" class="resultado" readonly>
-                        </div>
                     </div>
                 </div>
             </div>
